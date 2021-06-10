@@ -16,10 +16,10 @@
   --color-tertiary-1: #00c9e4;
   --color-tertiary-2: #0098ac;
 
+  --color-shadow: #a0a0a0;
+
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Source Sans Pro", sans-serif;
-
-  --color-shadow: #a0a0a0;
 }
 
 ::selection {
@@ -233,7 +233,7 @@ a:active {
 }
 
 .footer__social ul li:hover,
-.footer__social ul li:hover:focus {
+.footer__social ul li:focus {
   fill: white;
   transition: all 0.2s;
 }

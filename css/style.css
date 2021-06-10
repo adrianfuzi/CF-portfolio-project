@@ -1,1 +1,248 @@
-/* Future styles here */
+/* ! Typeface */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+/* ! Base */
+
+:root {
+  /* * Color Palette & Fonts */
+  --color-primary-1: #007180;
+  --color-primary-2: #fbfbfb;
+  --color-primary-3: #313131;
+
+  --color-secondary-1: #00547a;
+  --color-secondary-2: #202020;
+  --color-secondary-3: #b5b5b5;
+
+  --color-tertiary-1: #00c9e4;
+  --color-tertiary-2: #0098ac;
+
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Source Sans Pro", sans-serif;
+
+  --color-shadow: #a0a0a0;
+}
+
+::selection {
+  background: var(--color-tertiary-2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  background-color: var(--color-primary-2);
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+/* ! Buttons & Links */
+
+a {
+  color: var(--color-primary-1);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-secondary-1);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-tertiary-1);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--color-tertiary-1);
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 15px 10px;
+  padding: 15px;
+  background-color: var(--color-primary-1);
+  box-shadow: 0 2px 5px var(--color-shadow);
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+@media (min-width: 767px) {
+  .button {
+    width: 13em;
+  }
+}
+
+.button:hover,
+.button:active {
+  box-shadow: 0 4px 5px var(--color-shadow);
+  opacity: 0.9;
+  transform: translateY(-3px);
+}
+
+.button a {
+  color: var(--color-primary-2);
+  text-decoration: none;
+}
+
+/* ! Header */
+
+.header {
+  background-color: var(--color-primary-1);
+}
+
+.header a {
+  color: var(--color-primary-2);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.header nav ul {
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.header__title {
+  text-decoration: none;
+  letter-spacing: 8px;
+  padding: 1em 0;
+  font-size: 24px;
+}
+
+.header__title:hover {
+  text-decoration: none;
+}
+
+/* ! Hero */
+
+.hero {
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(4, 229, 71, 0.08) 0px,
+      rgba(4, 229, 71, 0.08) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(4, 229, 71, 0.08) 0px,
+      rgba(4, 229, 71, 0.08) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    linear-gradient(90deg, rgb(0, 84, 122), rgb(0, 113, 128));
+}
+
+/* ! Footer */
+
+.footer {
+  color: var(--color-primary-2);
+  background-color: var(--color-primary-3);
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: 400;
+  padding: 1em 0 0.5em 0;
+}
+
+.footer__contact--icon {
+  fill: var(--color-secondary-3);
+  transition: all 0.2s;
+}
+
+.footer__contact--icon:hover,
+.footer__contact--icon:focus {
+  fill: white;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.footer__contact--text {
+  font-family: var(--font-primary);
+  color: var(--color-primary-2);
+  text-decoration: none;
+}
+
+.footer__skype {
+  padding-top: 1em;
+}
+
+.footer__skype a {
+  color: var(--color-tertiary-1);
+}
+
+.footer__social::before {
+  content: "";
+  display: block;
+  margin: 1.5em auto;
+  border-top: 0.5px solid var(--color-secondary-3);
+  max-width: 20em;
+}
+
+.footer__social ul {
+  fill: var(--color-secondary-3);
+  list-style: none;
+  margin: 1.5em 0;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.footer__social ul li {
+  transition: all 0.2s;
+}
+
+.footer__social ul li:hover,
+.footer__social ul li:hover:focus {
+  fill: white;
+  transition: all 0.2s;
+}
+
+.footer__social ul li:not(:last-child) {
+  margin-right: 2em;
+}
+
+.footer__copy {
+  color: var(--color-secondary-3);
+  padding-bottom: 1.5em;
+}

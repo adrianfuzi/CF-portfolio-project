@@ -74,15 +74,15 @@ img {
 /* ? Page Settings */
 
 #home {
-  margin-top: 104px;
+  margin-top: 112px;
 }
 
 #about {
-  margin-top: 129px;
+  margin-top: 137px;
 }
 
 #project {
-  margin-top: 129px;
+  margin-top: 137px;
 }
 
 /* ! Buttons & Links */
@@ -183,7 +183,7 @@ a:active {
 .header__title {
   text-decoration: none;
   letter-spacing: 8px;
-  padding: 0.5em 0;
+  padding: 1em 0 0.5em;
   font-size: 24px;
 }
 

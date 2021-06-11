@@ -265,6 +265,10 @@ a:active {
   margin-bottom: 16px;
 }
 
+.about__intro img {
+  box-shadow: 0 2px 16px var(--color-shadow-1);
+}
+
 .about__intro h3 {
   margin: 24px 0 16px;
 }

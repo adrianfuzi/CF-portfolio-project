@@ -304,20 +304,15 @@ a:active {
 }
 
 .project img {
-  margin: 16px 0 24px;
+  margin: 0 0 24px;
 }
 
-.project h2 {
+.project h3 {
   margin: 24px 0 16px;
 }
 
-.project__link {
-  display: inline-block;
-  margin-top: 16px;
-}
-
-.project__button {
-  margin-top: 16px;
+.project p {
+  margin-bottom: 16px;
 }
 
 .project__cover img {

@@ -16,7 +16,8 @@
   --color-tertiary-1: #00c9e4;
   --color-tertiary-2: #0098ac;
 
-  --color-shadow: #a0a0a0;
+  --color-shadow-1: #a0a0a0;
+  --color-shadow-2: #c7c7c7;
 
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Source Sans Pro", sans-serif;
@@ -114,7 +115,7 @@ a:active {
   padding: 15px;
   color: var(--color-primary-2) !important;
   background-color: var(--color-primary-1);
-  box-shadow: 0 2px 5px var(--color-shadow);
+  box-shadow: 0 2px 5px var(--color-shadow-1);
   opacity: 1;
   transition: all 0.2s;
 }
@@ -127,7 +128,7 @@ a:active {
 
 .button:hover,
 .button:active {
-  box-shadow: 0 4px 5px var(--color-shadow);
+  box-shadow: 0 4px 5px var(--color-shadow-1);
   opacity: 0.9;
   transform: translateY(-3px);
   text-decoration: none;
@@ -237,7 +238,7 @@ a:active {
   margin: 0 0.5em;
 }
 
-.project {
+.projects {
   margin-bottom: 36px;
 }
 
@@ -245,11 +246,11 @@ a:active {
   margin: 24px 0 16px;
 }
 
-.project__text h3 {
+.projects__text h3 {
   margin: 16px 0;
 }
 
-.project__text p {
+.projects__text p {
   margin: 0 0 16px;
 }
 
@@ -305,6 +306,7 @@ a:active {
 
 .project img {
   margin: 0 0 24px;
+  box-shadow: 0 2px 16px var(--color-shadow-2);
 }
 
 .project h3 {
@@ -317,6 +319,7 @@ a:active {
 
 .project__cover img {
   margin-bottom: 16px;
+  box-shadow: none;
 }
 
 .project__title {

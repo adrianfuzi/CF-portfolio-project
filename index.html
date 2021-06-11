@@ -32,11 +32,11 @@
     <!-- Main Section Start -->
     <main>
       <!-- ! Section: Hero -->
-      <div class="hero">
-        <div>
-          <h1>Hi, I'm Adrian</h1>
-          <span>I'm a UI designer from Munich.</span>
-          <p>
+      <div class="hero-wrapper">
+        <div class="hero">
+          <h1 class="hero__title">Hi, I'm Adrian</h1>
+          <p class="hero__text">I'm a UI designer from Munich.</p>
+          <p class="hero__text">
             My passion is designing user-friendly and visually pleasing
             interfaces.
           </p>
@@ -44,12 +44,12 @@
       </div>
 
       <!-- ! Section: Projects -->
-      <div id="projects-scroll">
-        <h2>My Projects</h2>
+      <div class="projects" id="projects-scroll">
+        <h2 class="projects__title">My Projects</h2>
 
         <!-- ? Project #1 -->
-        <div>
-          <div>
+        <div class="project">
+          <div class="project__image">
             <picture>
               <source
                 srcset="./img/project_cover/cover_ew@1x.png"
@@ -58,21 +58,19 @@
               <img src="./img/project_cover/cover_ew@2x.png" alt="Erda Wood" />
             </picture>
           </div>
-          <div>
+          <div class="project__text">
             <h3>Erda Wood - UI/UX Design</h3>
             <p>
               Erda Wood is an e-commerce store that sells handcrafted wooden
               products.
             </p>
-            <div class="button">
-              <a href="erdawood.html">See Project</a>
-            </div>
+            <a class="button" href="erdawood.html">See Project</a>
           </div>
         </div>
 
         <!-- ? Project #2 -->
-        <div>
-          <div>
+        <div class="project">
+          <div class="project__image">
             <picture>
               <source
                 srcset="./img/project_cover/cover_ss@1x.png"
@@ -81,15 +79,13 @@
               <img src="./img/project_cover/cover_ss@2x.png" alt="Subscape" />
             </picture>
           </div>
-          <div>
+          <div class="project__text">
             <h3>Subscape - UI/UX Design</h3>
             <p>
               Subscape is a subscription management app designed for both iOS
               and Android.
             </p>
-            <div class="button">
-              <a href="subscape.html">See Project</a>
-            </div>
+            <a class="button" href="subscape.html">See Project</a>
           </div>
         </div>
       </div>

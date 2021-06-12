@@ -72,18 +72,72 @@ img {
   width: 100%;
 }
 
+@media (min-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.25em;
+  }
+
+  h2 {
+    font-size: 2.75em;
+  }
+
+  h3 {
+    font-size: 2.25em;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
 /* ? Page Settings */
 
 #home {
   margin-top: 112px;
 }
 
+@media (min-width: 767px) {
+  #home {
+    margin-top: 74px;
+  }
+}
+
 #about {
   margin-top: 137px;
 }
 
+@media (min-width: 767px) {
+  #about {
+    margin-top: 99px;
+  }
+}
+
 #project {
   margin-top: 137px;
+}
+
+@media (min-width: 767px) {
+  #project {
+    margin-top: 99px;
+  }
 }
 
 /* ! Buttons & Links */
@@ -122,7 +176,7 @@ a:active {
 
 @media (min-width: 767px) {
   .button {
-    width: 13em;
+    width: 15em;
   }
 }
 
@@ -192,10 +246,37 @@ a:active {
   text-decoration: none;
 }
 
+@media (min-width: 767px) {
+  .header nav {
+    height: 10px;
+  }
+
+  .header a {
+    position: relative;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+
+  .header nav ul {
+    position: relative;
+    bottom: 50px;
+    justify-content: flex-end;
+  }
+
+  .header nav ul li {
+    margin-right: 2.5em;
+  }
+
+  .header__title {
+    margin-left: 2em;
+    width: 11em;
+  }
+}
+
 /* ! Hero */
 
 .hero-wrapper {
-  height: 50vh;
+  height: 25em;
   background-image: repeating-linear-gradient(
       135deg,
       rgba(4, 229, 71, 0.08) 0px,
@@ -232,18 +313,45 @@ a:active {
   margin-bottom: 12px;
 }
 
+@media (min-width: 767px) {
+  .hero-wrapper {
+    height: 30em;
+  }
+
+  .hero {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary-2);
+  }
+
+  .hero__title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .hero__text {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
 /* ! Projects */
 
-.projects {
+.projects-wrapper {
   margin: 0 0.5em;
+}
+
+.projects-wrapper__title {
+  margin: 24px 0 16px;
 }
 
 .projects {
   margin-bottom: 36px;
-}
-
-.projects__title {
-  margin: 24px 0 16px;
 }
 
 .projects__text h3 {
@@ -252,6 +360,28 @@ a:active {
 
 .projects__text p {
   margin: 0 0 16px;
+}
+
+@media (min-width: 767px) {
+  .projects-wrapper {
+    margin: 0 2.5em;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+  }
+
+  .projects__text {
+    margin-left: 3em;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-wrapper {
+    margin: 0 6.5em;
+  }
 }
 
 /* ! About */
@@ -266,7 +396,7 @@ a:active {
 }
 
 .about__intro img {
-  box-shadow: 0 2px 16px var(--color-shadow-1);
+  box-shadow: 0 2px 16px var(--color-shadow-2);
 }
 
 .about__intro h3 {
@@ -302,6 +432,35 @@ a:active {
   margin-left: 1em;
 }
 
+.about__skills:not(:last-child) {
+  margin-right: 4em;
+}
+
+@media (min-width: 767px) {
+  .skills-wrapper {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .about {
+    margin: 0 8em;
+  }
+
+  .about__skills ul li {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin: 0 15em;
+  }
+
+  .about__skills ul li {
+    font-size: 22px;
+  }
+}
+
 /* ! Project */
 
 .project {
@@ -330,6 +489,30 @@ a:active {
   margin-bottom: 16px;
 }
 
+@media (min-width: 767px) {
+  .project {
+    margin: 0 2.5em 24px;
+  }
+
+  .project a {
+    font-size: 18px;
+  }
+
+  .project__cover img {
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project {
+    margin: 0 8.5em 24px;
+  }
+
+  .project a {
+    font-size: 20px;
+  }
+}
+
 /* ! Footer */
 
 .footer {
@@ -339,6 +522,7 @@ a:active {
 }
 
 .footer__title {
+  font-size: 2.25em;
   font-weight: 400;
   padding: 1em 0 0.5em 0;
 }
@@ -356,12 +540,14 @@ a:active {
 }
 
 .footer__contact--text {
+  font-size: 16px;
   font-family: var(--font-primary);
   color: var(--color-primary-2);
   text-decoration: none;
 }
 
 .footer__skype {
+  font-size: 16px;
   margin: 0 1em;
   padding-top: 1em;
 }
@@ -402,6 +588,7 @@ a:active {
 }
 
 .footer__copy {
+  font-size: 16px;
   color: var(--color-secondary-3);
   padding-bottom: 1.5em;
 }

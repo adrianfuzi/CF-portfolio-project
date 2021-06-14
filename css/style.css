@@ -276,7 +276,10 @@ a:active {
 /* ! Hero */
 
 .hero-wrapper {
-  height: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
   background-image: repeating-linear-gradient(
       135deg,
       rgba(4, 229, 71, 0.08) 0px,
@@ -295,11 +298,6 @@ a:active {
 }
 
 .hero {
-  width: 20em;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-30%, -30%);
   color: var(--color-primary-2);
 }
 
@@ -314,17 +312,8 @@ a:active {
 }
 
 @media (min-width: 767px) {
-  .hero-wrapper {
-    height: 30em;
-  }
-
   .hero {
     width: 100%;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-primary-2);
   }
 
   .hero__title {
@@ -591,4 +580,76 @@ a:active {
   font-size: 16px;
   color: var(--color-secondary-3);
   padding-bottom: 1.5em;
+}
+
+/* ! Keyframes & Animations */
+
+@keyframes car1 {
+  from {
+    transform: translateX(-560px);
+  }
+  to {
+    transform: translateX(670px);
+  }
+}
+
+@keyframes car2 {
+  from {
+    transform: translateX(560px);
+  }
+  to {
+    transform: translateX(-700px);
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-70px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sun {
+  0% {
+    fill: #ffd000;
+  }
+  50% {
+    fill: #ffee00;
+  }
+  100% {
+    fill: #ffd000;
+  }
+}
+
+#CAR1 {
+  animation-duration: 5s;
+  animation-name: car1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#CAR2 {
+  animation-duration: 5s;
+  animation-name: car2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#CLOUDS {
+  animation-duration: 15s;
+  animation-name: clouds;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#SUN {
+  animation-duration: 4s;
+  animation-name: sun;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }

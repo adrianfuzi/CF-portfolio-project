@@ -22,11 +22,26 @@
       <a class="header__title" href="index.html">Adrian Füzi</a>
       <nav>
         <ul>
-          <li><a href="#projects-scroll">Projects</a></li>
+          <li class="p"><a href="#projects-scroll">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact-scroll">Contact</a></li>
+          <li class="c"><a href="#contact-scroll">Contact</a></li>
+          <div class="header__burger">
+            <div class="header__burger--line line-1"></div>
+            <div class="header__burger--line line-2"></div>
+            <div class="header__burger--line line-3"></div>
+          </div>
         </ul>
       </nav>
+    </div>
+
+    <!-- ! Section: Burger Drawer Menu -->
+
+    <div class="drawer">
+      <ul>
+        <li class="p"><a href="#projects-scroll">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="c"><a href="#contact-scroll">Contact</a></li>
+      </ul>
     </div>
 
     <!-- Main Section Start -->
@@ -1638,7 +1653,12 @@
     </footer>
 
     <!-- ! JS -->
-    <script src="./js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/svg.js"></script>
   </body>
 </html>

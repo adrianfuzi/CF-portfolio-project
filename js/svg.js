@@ -1,4 +1,5 @@
-// Set SVG image width
+// ! Set SVG image width
+
 const svg = document.getElementById("undraw_town_r6pc");
 
 function setWidth() {

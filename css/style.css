@@ -185,7 +185,7 @@ a:active {
 
 @media (min-width: 767px) {
   .button {
-    width: 15em;
+    width: 16em;
   }
 }
 
@@ -689,7 +689,6 @@ a:active {
 }
 
 .footer__social ul {
-  fill: var(--color-secondary-3);
   list-style: none;
   margin: 1.5em 0;
   display: flex;
@@ -697,12 +696,13 @@ a:active {
   transition: all 0.2s;
 }
 
-.footer__social ul li {
+.footer__social ul li svg {
+  fill: var(--color-secondary-3);
   transition: all 0.2s;
 }
 
-.footer__social ul li:hover,
-.footer__social ul li:focus {
+.footer__social ul li svg:hover,
+.footer__social ul li svg:focus {
   fill: white;
   transition: all 0.2s;
 }

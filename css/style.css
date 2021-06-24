@@ -111,42 +111,15 @@ img {
 /* ? Page Settings */
 
 #home {
-  margin-top: 58px;
-
-  /* For old menu layout */
-  /* margin-top: 112px; */
-}
-
-@media (min-width: 767px) {
-  #home {
-    margin-top: 74px;
-  }
+  margin-top: 2.5rem;
 }
 
 #about {
-  margin-top: 83px;
-
-  /* For old menu layout */
-  /* margin-top: 137px; */
-}
-
-@media (min-width: 767px) {
-  #about {
-    margin-top: 99px;
-  }
+  margin-top: calc(2.5rem + 2.5em);
 }
 
 #project {
-  margin-top: 83px;
-
-  /* For old menu layout */
-  /* margin-top: 137px; */
-}
-
-@media (min-width: 767px) {
-  #project {
-    margin-top: 99px;
-  }
+  margin-top: calc(2.5rem + 2.5em);
 }
 
 /* ! Buttons & Links */
@@ -201,50 +174,29 @@ a:active {
 
 .header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0px;
   width: 100%;
   background-color: var(--color-primary-1);
   box-shadow: 0px 1px 1px var(--color-tertiary-2);
   z-index: 1;
+  height: 3.5rem;
 }
 
 .header a {
   color: var(--color-primary-2);
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  justify-content: flex-start;
-
-  /* Old menu layout: */
-  /* justify-content: center; */
 }
 
 .header nav {
-  /* Delete for old menu layout */
-  height: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header nav ul {
-  padding: 1em 0 0.5em;
-  display: flex;
-  list-style: none;
-
-  /* For old menu layout */
-  /* justify-content: space-evenly; */
-
-  /* Delete for old menu layout */
-  position: relative;
-  bottom: 50px;
-  justify-content: flex-end;
-}
-
-.header nav ul li {
-  /* Old menu layout */
-  /* padding-bottom: 5px;
-  transition: all 0.2s;
-  border-bottom: 1px solid transparent;
-  border-width: 1px; */
-
   display: none;
 }
 
@@ -266,27 +218,11 @@ a:active {
   text-decoration: none;
   letter-spacing: 8px;
   font-size: 18px;
-  padding: 1em 0 0.5em;
-  margin-left: 1em;
-  width: 12em;
-  position: relative;
-  z-index: 1;
-
-  /* For old menu layout */
-  /* font-size: 24px; */
-  /* width: 11em; */
-  /* margin-left: 2em; */
-}
-
-.header__title:hover {
-  text-decoration: none;
+  margin-left: 0.5em;
 }
 
 .header__burger {
-  display: block;
-  margin-right: 1em;
-  margin-top: 0.3em;
-  z-index: 3;
+  margin-right: 0.5em;
 }
 
 .header__burger:hover {
@@ -364,39 +300,16 @@ a:active {
 }
 
 @media (min-width: 767px) {
-  /* Old menu layout */
-  /* .header nav {
-    height: 10px;
-  } */
-
-  /* .header a {
-    position: relative;
-    z-index: 1;
-  } */
-
-  /* .header nav ul {
-    For old menu layout
-
-    position: relative;
-    bottom: 50px;
-    justify-content: flex-end;
-  } */
-
-  .header nav ul li {
-    margin-right: 2.5em;
-
-    /* Delete for old menu layout */
-    transition: all 0.2s;
-    border-bottom: 1px solid transparent;
-    border-width: 1px;
-    display: block;
+  .header nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin-right: 2em;
   }
 
   .header__title {
     font-size: 24px;
     margin-left: 2em;
-
-    /* width: 11em; */
   }
 
   .header__burger {

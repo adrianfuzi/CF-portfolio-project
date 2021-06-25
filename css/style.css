@@ -302,15 +302,15 @@ a:active {
 @media (min-width: 767px) {
   .header nav ul {
     display: flex;
-    gap: 3rem;
+    /* Currently not supported in Safari */
+    /* gap: 3rem; */
     list-style: none;
     margin-right: 2em;
   }
 
-  @supports not (gap: 3rem) {
-    .header nav ul li:not(:last-child) {
-      margin-right: 3rem;
-    }
+  /* For Safari Support */
+  .header nav ul li:not(:last-child) {
+    margin-right: 3rem;
   }
 
   .header__title {

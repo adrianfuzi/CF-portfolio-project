@@ -307,6 +307,12 @@ a:active {
     margin-right: 2em;
   }
 
+  @supports not (gap: 3rem) {
+    .header nav ul li:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
   .header__title {
     font-size: 24px;
     margin-left: 2em;
